@@ -32,14 +32,15 @@
         <div class="row">
             <div class="col col-sm-4"></div>
             <div class="col col-12 col-sm-4">
+                <form action="/read" method="POST">
                 <table class="table table-borderless table-secondary table table-hover">
                     <br>
-                    <tr><td>Name:</td><td><input type="text" class="form-control" name="" id=""></td></tr>
-                    <tr><td>Address:</td><td><textarea class="form-control" cols="30" rows="5"></textarea></td></tr>
-                    <tr><td>Gender</td><td><input type="radio"> Male <input type="radio">Female</td></tr>
+                    <tr><td>Name:</td><td><input type="text" class="form-control" name="name" id=""></td></tr>
+                    <tr><td>Address:</td><td><textarea class="form-control" cols="30" name="address" rows="5"></textarea></td></tr>
+                    <tr><td>Gender</td><td><input name="gen" type="radio"> Male <input name="gen" type="radio">Female</td></tr>
                     <tr><td>District:</td><td>
                     <div class="dropdown">
-                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <button type="submit" name="dis" class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                       -Select-
                         </button>
                         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -60,14 +61,15 @@
                         </div>
                     </div>
                 </td></tr>
-                <tr><td>DOB:</td><td><input type="date" class="form-control"></td></tr>
-                <tr><td>Email:</td><td><input type="email" class="form-control"></td></tr>
-                <tr><td>UserName:</td><td><input type="text" class="form-control"></td></tr>
-                <tr><td>Password:</td><td><input type="password" class="form-control"></td></tr>
-                <tr><td>Confirm Password:</td><td><input type="password" class="form-control"></td></tr>
+                <tr><td>DOB:</td><td><input type="date" name="dob" class="form-control"></td></tr>
+                <tr><td>Email:</td><td><input type="email" name="email" class="form-control"></td></tr>
+                <tr><td>UserName:</td><td><input type="text" name="uname" class="form-control"></td></tr>
+                <tr><td>Password:</td><td><input type="password" name="psd" class="form-control"></td></tr>
+                <tr><td>Confirm Password:</td><td><input type="password" name="cpsd" class="form-control"></td></tr>
                 <tr><td><input type="submit" class="btn btn-info" value="Reset"></td>
                 <td><input type="submit" class="btn btn-success" value="Register" ></td></tr>
                 </table>
+                </form>
             </div>
             <div class="col col-sm-4"></div>
         </div>
