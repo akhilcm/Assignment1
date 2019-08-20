@@ -1,0 +1,74 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Read Registrationdata</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <style>
+    table,tr,th,td{
+        border: 1px solid black;
+        border-collapse: collapse;
+        table-layout: auto;
+    }
+    </style>
+</head>
+
+<body>
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+
+                <!-- Links -->
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="/">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/login">Login</a>
+                  </li>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/regi">Registration</a>
+                </li>
+                <li class="nav-item">
+                        <a class="nav-link" href="/views">RegistrationData</a>
+                      </li>
+                </ul>
+                <br>
+</nav>
+
+    <form action="/read" method="POST">
+        <table>
+            <thead>
+            <tr><th>Name</th>
+                <th>Address</th>
+                <th>Gender</th>
+                <th>District</th>
+                <th>DOB</th>
+                <th>Email</th>
+                <th>UserName</th>
+                <th>Password</th>
+                <th>Confirm Password</th></tr>
+            </thead>
+            <% for(var i=0;i<data.length;i++){ %>
+<tbody>
+    <tr><td><%=data.name %></td>
+        <td><%=data.address %></td>
+        <td><%=data.gen %></td>
+        <td><%=data.dis %></td>
+    <td><%=data.dob %></td>
+    <td><%=data.email %></td>
+    <td><%=data.uname %></td>
+    <td><%=data.psd %></td>
+    <td><%=data.cpsd %></td>
+</tr>
+</tbody>
+<%} %>
+</table>
+</form>
+
+</body>
+</html>

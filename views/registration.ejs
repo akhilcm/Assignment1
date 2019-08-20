@@ -1,33 +1,35 @@
-<!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <title>Registration</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <title>Registration</title>
 </head>
 <body>
-        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
 
-                <!-- Links -->
-                <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <a class="nav-link" href="/">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="/login">Login</a>
-                  </li>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="/regi">Registration</a>
-                </li>
-                </ul>
-              
-              </nav>
+        <!-- Links -->
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/login">Login</a>
+          </li>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/regi">Registration</a>
+        </li>
+        <li class="nav-item">
+                <a class="nav-link" href="/views">RegistrationData</a>
+              </li>
+        </ul>
+</nav>
     <div class="container">
         <div class="row">
             <div class="col col-sm-4"></div>
@@ -37,12 +39,12 @@
                     <br>
                     <tr><td>Name:</td><td><input type="text" class="form-control" name="name" id=""></td></tr>
                     <tr><td>Address:</td><td><textarea class="form-control" cols="30" name="address" rows="5"></textarea></td></tr>
-                    <tr><td>Gender</td><td><input name="gen" type="radio"> Male <input name="gen" type="radio">Female</td></tr>
+                    <tr><td>Gender</td><td><input name="gen" value="Male" type="radio"> Male <input name="gen" value="Female" type="radio">Female</td></tr>
                     <tr><td>District:</td><td>
                     <div class="dropdown">
-                        <button type="submit" name="dis" class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <input type="submit" name="dis" class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                       -Select-
-                        </button>
+                        </input>
                         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                             <a class="dropdown-item" href="#">Trivandrum</a>
                             <a class="dropdown-item" href="#">Kollam</a>
@@ -74,6 +76,6 @@
             <div class="col col-sm-4"></div>
         </div>
     </div>
-    
+
 </body>
 </html>
